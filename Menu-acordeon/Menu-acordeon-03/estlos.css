@@ -1,0 +1,34 @@
+*{
+	box-sizing: border-box;
+}
+
+.acordeon input{
+	display: none;
+}
+.acordeon_titulo{
+	display: block;
+	padding: 15px;
+	background: crimson;
+	color: #fff;
+	font-size: 20px;
+	cursor: pointer;
+	border-bottom: 1px solid #fff;
+
+}
+
+.acordeon_titulo:hover{
+	background: rgba(220,20,60,0.8);
+}
+
+.acordeon_contenido{
+	height: 0;
+	overflow: hidden;
+	margin: 0;
+	transition: all 0.5s;
+
+}
+
+.acordeon input:checked ~ .acordeon_contenido{
+height: auto;
+margin: 15px 0;
+}

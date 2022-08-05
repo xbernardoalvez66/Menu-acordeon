@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Acordion</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="acordion">
+		<div class="contentBx">
+		<div class="label">List One</div>
+		<div class="content">
+			<p>Lorem ipsum dolor, sit amet consectetur adipisicing, elit. Esse dolores vitae explicabo possimus eaque dolorum velit labore quas sequi voluptas necessitatibus cupiditate amet modi, unde molestiae a itaque saepe fugit.</p>
+		</div>
+	</div>
+	<div class="contentBx">
+		<div class="label">List Two</div>
+		<div class="content">
+			<p>Lorem ipsum dolor, sit amet consectetur adipisicing, elit. Esse dolores vitae explicabo possimus eaque dolorum velit labore quas sequi voluptas necessitatibus cupiditate amet modi, unde molestiae a itaque saepe fugit.</p>
+		</div>
+	</div>
+	<div class="contentBx">
+		<div class="label">List Three</div>
+		<div class="content">
+			<p>Lorem ipsum dolor, sit amet consectetur adipisicing, elit. Esse dolores vitae explicabo possimus eaque dolorum velit labore quas sequi voluptas necessitatibus cupiditate amet modi, unde molestiae a itaque saepe fugit.</p>
+		</div>
+	</div>
+    <div class="contentBx">
+		<div class="label">List Four</div>
+		<div class="content">
+			<p>Lorem ipsum dolor, sit amet consectetur adipisicing, elit. Esse dolores vitae explicabo possimus eaque dolorum velit labore quas sequi voluptas necessitatibus cupiditate amet modi, unde molestiae a itaque saepe fugit.</p>
+		</div>
+	</div>
+	</div>
+	<script>
+		const accordion = document.getElementsByClassName('contentBx');
+		for (var i = accordion.length; i++) {
+			accordion[i].addEventListener('click',function(){
+				this.classList.toggle('active')
+			})
+		}
+	</script>
+</body>
+</html>
